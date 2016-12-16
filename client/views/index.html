@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="meetupDemo">
 <head>
 	<title> Mean Demo </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
 </head>
-<body>
-	<h1>Hello user</h1>
+<body >
+	<!-- Meetup View -->
+	<div ng-controller="meetupsController">
+		<h1> There are {{ meetupsCount }} meetups </h1>
+	</div>
+
+
+	<script type="text/javascript" src="/js/controllers/meetupsController.js"></script>
 </body>
 </html>
