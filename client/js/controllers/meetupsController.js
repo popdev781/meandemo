@@ -1,6 +1,6 @@
-var app = angular.module("meetupDemo", []);
 
-app.controller("meetupsController",['$scope', function($scope){
+  
+app.controller("meetupsController",['$scope', '$resource', function($scope, $resource){
 
 	$scope.meetups = [
 		{name:"test data"},
@@ -8,7 +8,6 @@ app.controller("meetupsController",['$scope', function($scope){
 	];
 
 	$scope.createMeetup = function(){
-		console.log("hehe");
 		$scope.meetups.push({ name: $scope.meetupName });
 		$scope.meetupName ='';
 	};
