@@ -8,5 +8,6 @@ app.get('/', function(req, res) {
 app.use('/js', express.static(__dirname+'/client/js'));
 
 app.listen('8080', function() {
-	console.log('listening...');
+	console.log('listening on port 8080...');
 })
+
